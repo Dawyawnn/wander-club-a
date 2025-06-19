@@ -1,0 +1,305 @@
+body{
+  font-family: 'TT Norms Pro', sans-serif;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #023E74;
+}
+
+.banner p{
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #EFEFEF;
+  padding: 1rem 2rem 1rem 6rem;
+  text-align: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 65vw;
+}
+
+.title {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  color: #023E74;
+  font-weight: 600;
+}
+
+.hero-section h2 {
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.hero-section h3 {
+  font-size: 1em;
+  color: #444;
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.hero-section p {
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: flex-start; 
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-section a.cta {
+  background-color: #023E74;
+  color: #fff;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border-radius: 3rem;
+  transition: background 0.3s ease;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.hero-section a.cta:hover {
+  background-color: #444;
+}
+
+.shipping,
+.shop-link {
+  display: flex;
+  gap: 5px;
+}
+
+.shipping{
+  align-items: end;
+}
+
+.shop-link {
+  align-items: center;
+}
+
+.shop-link {
+  text-decoration: underline #fff;
+}
+
+.env-cause{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.env-cause img{
+  width: 1rem;
+  height: 1rem;
+}
+
+.violator-belt {
+  background: #029C9F;
+  color: #fff;
+  padding: 1rem 6rem;
+  font-size: 1rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.running-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.running-line.cloned-line {
+  display: none;
+}
+
+.violator-belt span {
+  margin-right: 2rem;
+  flex-direction: row;
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+/* Nav */
+.hero-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #023E74;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-nav .logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.hero-nav .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1600px) {
+  .banner{
+    padding: 1rem 10rem;
+  }
+
+   .hero-section{
+    padding: 1rem 10rem 1rem 10rem;;
+  }
+
+  .hero-left {
+    width: 60vw;
+}
+
+  .violator-belt {
+    padding: 1rem 10rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .banner{
+    padding: 1rem 2rem;
+  }
+
+  .banner p{
+    font-size: 0.9em;
+  }
+
+  .hero-section{
+    padding: 1rem 0rem 1rem 2rem;
+  }
+
+  .hero-left {
+    width: 90vw;
+  }
+  
+  .hero-section h1 {
+      font-size: 2.5em;
+  }
+
+  .hero-section h2 {
+    font-size: 1em;
+  }
+
+  .hero-section h3 {
+    font-size: 0.9em;
+  }
+
+  .hero-section p {
+    font-size: 0.9em
+  }
+
+  .hero-section a.cta {
+    font-size: 0.9em;
+  }
+
+  .hero-nav .nav-links {
+    display: none;
+  }
+
+  .running-line {
+    margin: 0rem 20rem;
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: scroll-left linear infinite;
+    animation-play-state: running;
+  }
+ 
+  @keyframes scroll-left {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(var(--scroll-distance));}
+  }
+
+  .violator-belt img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .violator-belt span {
+    margin-right: 6rem;
+  }
+
+  .violator-belt p {
+    width: fit-content;
+    white-space: nowrap;
+    align-content: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner{
+    padding: 1rem 1rem;
+  }
+
+  .banner p{
+    font-size: 0.8em;
+  }
+
+  .shipping{
+    align-items: center;
+  }
+
+  .hero-section {
+    padding: 1rem 0rem 1rem 1rem;
+    flex-direction: column;
+  }
+
+  .hero-left {
+    order: 2;
+    gap: 1rem;
+  }
+
+  .hero-right {
+    order: 1;
+  }
+
+  .hero-section h1 {
+      font-size: 2em;
+  }
+
+  .hero-section a.cta {
+    width: 100%;
+  }
+}

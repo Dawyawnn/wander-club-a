@@ -1,0 +1,90 @@
+{% comment %} Load the external stylesheet {% endcomment %}
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+{{ 'scrolling.js' | asset_url | script_tag }}
+
+<div class="banner">
+  <div class="shipping">
+    <img 
+      src="{{ 'ph_truck-light.svg' | asset_url }}" 
+      alt="" 
+      class="shipping-icon" 
+      aria-hidden="true"
+    >
+    <p>Free U.S. shipping on $50+</p>
+  </div>
+  <div class="shop-link">
+    <p>Shop Now</p>
+    <img 
+      src="{{ 'stash_arrow-right-light.svg' | asset_url }}" 
+      alt="" 
+      class="shop-icon hide-on-mobile" 
+      aria-hidden="true"
+    >
+  </div>
+</div>
+
+<section class="hero-section">
+  <div class ="hero-left">
+    <div class ="hero-content">
+      <div class ="title">
+        <h1>Forgettable Souvenirs?</h1>
+        <h1>Not Anymore.</h1>
+      </div>
+      <h2>Build a personalized token holder that grows with every adventure.</h2>
+    </div>
+
+    <div class ="hero-cta">
+      <a href="/collections/all" class="cta">Build Yours Now!</a>
+      <span class ="env-cause">
+        <h3>Every order helps protect the planet.</h3>
+        <img src="{{ 'World.png' | asset_url }}" alt="Environmental Cause" aria-hidden="true">
+      </span>
+    </div>
+  </div>
+  <div class ="hero-right">
+    <img 
+      src="{{ 'BG-Product.png' | asset_url }}" 
+      alt="Personalized token holder" 
+      class="hero-image"
+    >
+  </div>
+</div>
+
+
+  <div class="violator-belt">
+    <div class="running-line">
+      <span>
+        <img src="{{ 'Return.png' | asset_url }}" alt="30-Day Returns" aria-hidden="true">
+        <p>30-Day Returns</p>
+      </span>
+      <span>
+        <img src="{{ 'Customer.png' | asset_url }}" alt="250k+ Happy Customers" aria-hidden="true">
+        <p>250k+ Happy Customers</p>
+      </span>
+      <span>
+        <img src="{{ 'Trustpilot.png' | asset_url }}" alt="4.9 Trustpilot Rating" aria-hidden="true">
+        <p>4.9 Trustpilot Rating</p>
+      </span>
+      <span>
+        <img src="{{ 'Proof.png' | asset_url }}" alt="Tarnish Proof + Lifetime Guarantee" aria-hidden="true">
+        <p>Tarnish Proof + Lifetime Guarantee</p>
+      </span>
+      <span>
+        <img src="{{ 'BBB.png' | asset_url }}" alt="A+ BBB Rating" aria-hidden="true">
+        <p>A+ BBB Rating</p>
+      </span>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero-Banner",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Hero-Banner"
+    }
+  ]
+}
+{% endschema %}
