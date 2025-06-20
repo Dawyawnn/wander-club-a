@@ -1,6 +1,47 @@
 {{ 'section-header.css' | asset_url | stylesheet_tag }}
 {{ 'header.js' | asset_url | script_tag }}
 
+<div class="banner">
+  <div class="happy-customers">
+    <img 
+      src="{{ 'solar_heart-linear.svg' | asset_url }}" 
+      alt="" 
+      class="happy-icon" 
+      aria-hidden="true"
+    >
+    <p>250K+ Happy Customers</p>
+  </div>
+  <div class="free-shipping">
+    <div class="shipping">
+      <img 
+        src="{{ 'ph_truck-light.svg' | asset_url }}" 
+        alt="" 
+        class="shipping-icon" 
+        aria-hidden="true"
+      >
+      <p>Free U.S. shipping on $50+</p>
+    </div>
+    <div class="shop-link">
+      <p>Shop Now</p>
+      <img 
+        src="{{ 'stash_arrow-right-light.svg' | asset_url }}" 
+        alt="" 
+        class="shop-icon hide-on-mobile" 
+        aria-hidden="true"
+      >
+    </div>
+  </div>
+  <div class="lifetime-guarantee">
+    <img 
+      src="{{ 'fluent_shield-task-16-regular.svg' | asset_url }}" 
+      alt="" 
+      class="guarantee-icon" 
+      aria-hidden="true"
+    >
+    <p>Lifetime Guarantee</p>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="header__left">
     <!-- Burger icon only shown on mobile -->

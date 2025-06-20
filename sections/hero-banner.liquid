@@ -2,48 +2,46 @@
 {{ 'hero-banner.css' | asset_url | stylesheet_tag }}
 {{ 'scrolling.js' | asset_url | script_tag }}
 
-<div class="banner">
-  <div class="shipping">
-    <img 
-      src="{{ 'ph_truck-light.svg' | asset_url }}" 
-      alt="" 
-      class="shipping-icon" 
-      aria-hidden="true"
-    >
-    <p>Free U.S. shipping on $50+</p>
-  </div>
-  <div class="shop-link">
-    <p>Shop Now</p>
-    <img 
-      src="{{ 'stash_arrow-right-light.svg' | asset_url }}" 
-      alt="" 
-      class="shop-icon hide-on-mobile" 
-      aria-hidden="true"
-    >
-  </div>
-</div>
-
 <section class="hero-section">
   <div class ="hero-left">
+    <div class ="wave">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="xMidYMid meet"
+        style="display: block; height: auto; width: 100%;">
+        <path 
+          fill="#f0f4fb" 
+          fill-opacity="1" 
+          d="M0,64L60,80C120,96,240,128,360,128C480,128,600,96,720,90.7C840,85,960,107,1080,101.3C1200,96,1320,64,1380,48L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" />
+      </svg>
+    </div>
     <div class ="hero-content">
       <div class ="title">
-        <h1>Forgettable Souvenirs?</h1>
-        <h1>Not Anymore.</h1>
+        <h1>Carry Your Adventures With You</h1>
       </div>
-      <h2>Build a personalized token holder that grows with every adventure.</h2>
-    </div>
-
-    <div class ="hero-cta">
-      <a href="/collections/all" class="cta">Build Yours Now!</a>
-      <span class ="env-cause">
-        <h3>Every order helps protect the planet.</h3>
-        <img src="{{ 'World.png' | asset_url }}" alt="Environmental Cause" aria-hidden="true">
-      </span>
-    </div>
+      <div class ="sub-copy">
+        <h2><span style="font-weight: bold; font-style: italic;">Each token is a memory — </span>your first trip abroad, your favorite park, your hometown. </h2>
+        <h2>Create a collection that grows with you and keeps your memories close, wherever life takes you.</h2>
+      </div>
+      <div class ="hero-cta">
+        <div class ="cta-discount">
+          <a href="/collections/all" class="cta">Start Your Collection</a>
+          <div class ="promo-discount">
+            <p>Save Up To 30% Off<p>
+          </div>
+        </div>
+        <span class ="env-cause">
+          <h3>We donate 1% of all sales to environmental non-profits.</h3>
+          <img src="{{ 'heart.png' | asset_url }}" alt="Environmental Cause" aria-hidden="true">
+        </span>
+      </div>
+    </div> 
   </div>
+  
   <div class ="hero-right">
     <img 
-      src="{{ 'BG-Product.png' | asset_url }}" 
+      src="{{ 'Product-Photo.png' | asset_url }}" 
       alt="Personalized token holder" 
       class="hero-image"
     >

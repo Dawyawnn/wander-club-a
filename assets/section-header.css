@@ -2,8 +2,43 @@ body{
   font-family: 'TT Norms Pro', sans-serif;
 }
 
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 6rem;
+  background-color: #023E74;
+}
+
+.banner p{
+  font-size: 0.7em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.happy-customers,
+.shipping,
+.shop-link,
+.lifetime-guarantee {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.free-shipping{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.shop-link {
+  text-decoration: underline #fff;
+}
+
 .site-header {
-  padding: 1.5rem 6rem 1rem 6rem;
+  padding: 0.5rem 6rem 0.5rem 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +105,7 @@ body{
 
 .header__search {
   position: relative;
-  width: 316px;
+  width: 265px;
   height: 40px;
 }
 
@@ -80,7 +115,7 @@ body{
   padding-left: 2.5rem; /* space for the icon */
   border: 1.5px solid #029C9F;
   border-radius: 3rem;
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
 }
 
@@ -121,12 +156,24 @@ body{
 }
 
 @media (min-width: 1600px) {
+  .banner{
+    padding: 1rem 10rem;
+  }
+
   .site-header {
     padding: 1.5rem 10rem 1rem 10rem;
   }
 }
 
 @media (max-width: 960px) {
+   .banner{
+    padding: 1rem 2rem;
+  }
+
+  .banner p{
+    font-size: 0.9em;
+  }
+
   .header__menu,
   .header__search {
     display: none;
@@ -161,6 +208,20 @@ body{
 }
 
 @media (max-width: 480px) {
+  .banner{
+    padding: 1rem 1rem;
+    justify-content: center;
+  }
+
+  .banner p{
+    font-size: 0.8em;
+  }
+
+  .happy-customers,
+  .lifetime-guarantee {
+    display: none;
+  }
+
   .site-header {
     padding: 1rem 1rem;
   }
